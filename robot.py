@@ -3,24 +3,24 @@
 import random
 
 # Start coding here...
+class Robot():
+    def __init__(self, name):
+        self.name = name
 
+    def hello(self):
+        print(f"Hi. My name is {self.name}. I can count and sing. And, I have feelings.")
 
+    def sing(self):
+        print("Mary had a little lamb...")
 
+    def count(self, stop_number):
+        for i in range(stop_number):
+            print(i)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    def how_do_you_feel(self):
+        possible_feelings = [":-)", ":-O", ":-(", ":-P"]
+        current_feeling = random.choice(possible_feelings)
+        print(f"I feel {current_feeling}")
 
 
 
